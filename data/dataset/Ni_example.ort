@@ -14,6 +14,38 @@
 #     name: Ni on Si
 #     category: from air
 #     description: ~1000 A of metal
+#     model:
+#       stack: air | m1 | SiO2 | Si
+#       layers:
+#         air:
+#           thickness: 0.0
+#           roughness: 0.0
+#           material:
+#             sld: {real: 0.0, imag: 0.0}
+#         m1:
+#           thickness: 1000.0
+#           roughness: 4.0
+#           material:
+#             formula: Ni
+#             mass_density: 8.9
+#         SiO2:
+#           thickness: 10.0
+#           roughness: 3.0
+#           material:
+#             sld: {real: 3.4700000000000002e-06, imag: 0.0}
+#         Si:
+#           thickness: 0.0
+#           roughness: 3.5
+#           material:
+#             sld: {real: 2.0699999999999997e-06, imag: 0.0}
+#       globals:
+#         roughness: {magnitude: 0.3, unit: nm}
+#         length_unit: angstrom
+#         mass_density_unit: g/cm^3
+#         number_density_unit: 1/nm^3
+#         sld_unit: 1/angstrom^2
+#         magnetic_moment_unit: muB
+#       reference: ORSO model language | 1.0
 #   measurement:
 #     instrument_settings:
 #       incident_angle: {min: 0.8, max: 3.5, individual_magnitudes: [0.8, 3.5]}
